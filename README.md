@@ -1,6 +1,6 @@
 # Lasso Homotopy Model
 
-This repository contains an implementation of a Lasso Homotopy algorithm, a method for solving the Lasso (Least Absolute Shrinkage and Selection Operator) regression problem by tracing the regularization path from a high penalty to a user-specified target penalty. The model is built from scratch using NumPy and follows the homotopy continuation approach described in literature like "Pathwise Coordinate Optimization" by Friedman et al.
+This repository contains an implementation of a Lasso Homotopy algorithm, a method for solving the Lasso (Least Absolute Shrinkage and Selection Operator) regression problem by tracing the regularization path from a high penalty to a user-specified target penalty. The model is built from scratch using NumPy.
 
 ## 1. What Does the Model Do and When Should It Be Used?
 
