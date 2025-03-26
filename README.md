@@ -2,8 +2,6 @@
 
 This repository contains an implementation of a Lasso Homotopy algorithm, a method for solving the Lasso (Least Absolute Shrinkage and Selection Operator) regression problem by tracing the regularization path from a high penalty to a user-specified target penalty. The model is built from scratch using NumPy.
 
-![image](https://github.com/user-attachments/assets/eb6b30bc-2e59-43da-a651-d6f057abc906)
-
 ## 1. What Does the Model Do and When Should It Be Used?
 
 ### 1.1 What It Does
@@ -23,6 +21,9 @@ It’s particularly useful compared to standard solvers when you want to explore
 ## 2. How Did You Test Your Model to Determine If It Is Working Reasonably Correctly?
 
 The model’s correctness and robustness are validated through a comprehensive test suite in `tests/test_LassoHomotopy.py`, using `pytest`. Key tests include:
+
+![image](https://github.com/user-attachments/assets/802b9331-61d7-44e9-a4eb-a5609a4714b2)
+
 
 1. **Small Test Dataset (`small_test.csv`)**:
    - Fits the model across multiple `lambda_reg` values (0.01, 0.1, 1.0, 10.0).
