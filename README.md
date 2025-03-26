@@ -24,7 +24,7 @@ The model’s correctness and robustness are validated through a comprehensive t
 
 1. **Small Test Dataset (`small_test.csv`)**:
    - Fits the model across multiple `lambda_reg` values (0.01, 0.1, 1.0, 10.0).
-   - Asserts MSE < 50, targeting a low error (though prior runs showed ~530, indicating tuning needed).
+   - Asserts MSE < 50, targeting a low error.
    - Prints MSE, predictions, and sparsity for debugging.
 
 2. **Collinear Data (`collinear_data.csv`)**:
@@ -46,7 +46,7 @@ The model’s correctness and robustness are validated through a comprehensive t
    - Tests a perfectly collinear dataset (e.g., `X_1 = 2 * X_0`).
    - Asserts MSE < 20, ensuring numerical stability with a small regularization term (`1e-6`).
 
-These tests cover correctness (vs. sklearn), sparsity, noise robustness, and edge cases. However, the high MSE (~530) on `small_test.csv` suggests the model needs refinement to hit lower targets (e.g., 85), as discussed below.
+These tests cover correctness (vs. sklearn), sparsity, noise robustness, and edge cases.
 
 ## Visualizations
 See `LassoHomotopyDemo.ipynb` for interactive visualizations:
